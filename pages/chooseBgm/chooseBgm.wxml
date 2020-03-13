@@ -1,0 +1,31 @@
+<view>
+  <view style="background-color:#DDDDDD">请勾选背景音乐（也可以不选择----点击音乐下方圆圈）</view>
+  <form bindsubmit='upload'>
+    <view class="divLine"></view>
+    <radio-group name="bgmId">
+      <block wx:for="{{bgmList}}">
+
+        <view>
+          <audio class="dislog" name="{{item.name}}" author="{{item.author}}" src="{{serverUrl}}{{item.path}}" id="myAudio" controls loop>
+          </audio>
+          <radio class="dislog" value="{{item.id}}"></radio>
+          <text decode="{{true}}">&ensp;&ensp;&ensp;&ensp;</text>
+        </view>
+
+        <view class="divLine"></view>
+      </block>
+    </radio-group>
+    
+    <view style="background-color:#DDDDDD">请填写视频描述</view>
+    <view class="inputView">
+
+      <label class="loginLabel">视频描述：</label>
+      <input name="desc" class="inputText" placeholder="说点什么吧" />
+    </view>
+
+    <!-- 提交 -->
+    <button class="submitBtn" type="primary" form-type='submit'>上传视频</button>
+
+    <button class="gobackBtn" type="warn" form-type='reset'>重置</button>
+  </form>
+</view>

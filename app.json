@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/userLogin/login",
+    "pages/index/index",
+    "pages/report/report",
+    "pages/videoinfo/videoinfo",
+    "pages/searchVideo/searchVideo",
+    "pages/chooseBgm/chooseBgm",
+    "pages/mine/mine",
+    "pages/userRegist/regist"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "无趣短视频",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
